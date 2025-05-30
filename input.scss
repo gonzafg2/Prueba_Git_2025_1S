@@ -1,0 +1,139 @@
+$color-principal: #0984AF;
+$color-secundario: #13BF6D;
+$color-donacion: #FC5D3D;
+$color-importante: white;
+$color-textos: black;
+$sombra: 0 4px 6px rgba(0, 0, 0, 0.2);
+$espaciado: 20px;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: $color-principal;
+    padding: $espaciado;
+    box-shadow: $sombra;
+}
+
+footer {
+    background-color: $color-principal;
+    color: $color-importante;
+    text-align: right;
+    padding: $espaciado;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 668px) {
+        text-align: center;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $color-principal !important;
+
+        &:hover {
+            color: $color-secundario !important;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+
+.anuncio-boton {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 669px) {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+    }
+}
+
+.boton__voluntario,
+.boton-donar {
+    color: $color-importante;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton__voluntario {
+    background-color: $color-secundario;
+}
+
+.boton-donar {
+    background-color: $color-donacion;
+}
+
+.carousel-item {
+    img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+.sliderFundacion {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 668px) {
+        width: 100%;
+    }
+}
+
+.titulo {
+    background-color: $color-principal;
+    color: $color-importante;
+    padding-top: $espaciado;
+    padding-bottom: $espaciado;
+}
+
+.pilares {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .pilar {
+        background: #fff;
+        padding: 1px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        img {
+            width: 50%;
+            margin-bottom: 1rem;
+            
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-row: 3;
+        grid-template-columns: 50% auto;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (max-width: 668px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.iconfooter {
+    width: 30px;
+    margin: 10px;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // Agrega sombra al hacer hover
+    }
+}

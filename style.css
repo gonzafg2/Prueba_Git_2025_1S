@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  color: #0984AF;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #0984AF;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 668px) {
+  footer {
+    text-align: center;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: #0984AF !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #13BF6D !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.anuncio-boton {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 669px) {
+  .anuncio-boton {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+  }
+}
+
+.boton__voluntario,
+.boton-donar {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton__voluntario {
+  background-color: #13BF6D;
+}
+
+.boton-donar {
+  background-color: #FC5D3D;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.sliderFundacion {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 668px) {
+  .sliderFundacion {
+    width: 100%;
+  }
+}
+
+.titulo {
+  background-color: #0984AF;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pilares {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pilares .pilar {
+  background: #fff;
+  padding: 1px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.pilares .pilar img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .pilares {
+    grid-row: 3;
+    grid-template-columns: 50% auto;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media (max-width: 668px) {
+  .iconos {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.iconfooter {
+  width: 30px;
+  margin: 10px;
+}
+.iconfooter:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
