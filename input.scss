@@ -4,7 +4,6 @@ $color-donacion: #FC5D3D;
 $color-importante: white;
 $color-textos: black;
 $sombra: 0 4px 6px rgba(0, 0, 0, 0.2);
-$espaciado: 20px;
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,7 +11,7 @@ body {
 
 header {
     color: $color-principal;
-    padding: $espaciado;
+    padding: 20rem;
     box-shadow: $sombra;
 }
 
@@ -20,8 +19,8 @@ footer {
     background-color: $color-principal;
     color: $color-importante;
     text-align: right;
-    padding: $espaciado;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20rem;
+    box-shadow: $sombra;
 
     @media (max-width: 668px) {
         text-align: center;
@@ -88,8 +87,8 @@ footer {
 .titulo {
     background-color: $color-principal;
     color: $color-importante;
-    padding-top: $espaciado;
-    padding-bottom: $espaciado;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
 }
 
 .pilares {
@@ -101,7 +100,7 @@ footer {
         background: #fff;
         padding: 1px;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: $sombra;
 
         img {
             width: 50%;
@@ -134,6 +133,6 @@ footer {
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // Agrega sombra al hacer hover
+        box-shadow: $sombra;
     }
 }
