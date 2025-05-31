@@ -15,6 +15,7 @@ footer {
   padding: 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
 }
+
 @media (max-width: 668px) {
   footer {
     text-align: center;
@@ -24,6 +25,7 @@ footer {
 .navbar-nav .nav-link {
   color: #0984AF !important;
 }
+
 .navbar-nav .nav-link:hover {
   color: #13BF6D !important;
   font-weight: bold;
@@ -34,6 +36,7 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 @media (min-width: 669px) {
   .anuncio-boton {
     flex-direction: row;
@@ -69,6 +72,7 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
+
 @media (max-width: 668px) {
   .sliderFundacion {
     width: 100%;
@@ -87,16 +91,19 @@ footer {
   gap: 2px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .pilares .pilar {
   background: #fff;
   padding: 1px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .pilares .pilar img {
   width: 50%;
   margin-bottom: 1rem;
 }
+
 @media (max-width: 768px) {
   .pilares {
     grid-row: 3;
@@ -110,6 +117,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
 }
+
 @media (max-width: 668px) {
   .iconos {
     flex-direction: row;
@@ -121,6 +129,7 @@ footer {
   width: 30px;
   margin: 10px;
 }
+
 .iconfooter:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
